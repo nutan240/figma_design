@@ -1,16 +1,15 @@
-import React from 'react'
+import React from "react";
 
-import './App.css'
-import { Box } from '@mui/material'
+import "./App.css";
+
+import MainApp from "./components/MainApp";
 
 function App() {
-  
-
   return (
     <>
-   <Box>hello</Box>
+      <MainApp />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
