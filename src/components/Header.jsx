@@ -25,7 +25,7 @@ function Header() {
           }}
         ></Typography>
         <Typography sx={{ width: "350px" ,
-        // height: "44.13px" ,
+        
          left: "197px" , display:'flex' ,
         justifyContent:'center' ,
         lineHeight:'43px'
@@ -36,22 +36,26 @@ function Header() {
         <Box
           sx={{
             width: "480.5px",
-            // height: "54px",
+            
             top: "22px",
             left: "711.5px",
             alignContent :'center' ,
             alignItems:'center',
             paddingX:'30px',
             display:{lg :'flex' , sm :'none'} ,
-            justifyContent :'space-between'
-            
+            justifyContent :'space-between' ,
+            ":hover":{
+              color:'#EB662B'
+            },
           }}
         >
           <Typography
             sx={{
               color: "#05073C",
               width: "149.61px",
-              
+              ":hover":{
+              color:'#EB662B'
+            },
               top: "0.94px",
             }}
           >
@@ -62,7 +66,9 @@ function Header() {
               width: "127.45px",
               height: "42.13",
               top: "0.94px",
-              
+              ":hover":{
+              color:'#EB662B'
+            },
               color: "#05073C",
             }}
           >
@@ -73,7 +79,9 @@ function Header() {
               width: "91.86px",
               height: "42.13",
               top: "0.94px",
-             
+              ":hover":{
+              color:'#EB662B'
+            },
               color: "#05073C",
             }}
           >
@@ -81,20 +89,25 @@ function Header() {
           </Typography>
           <Typography
             sx={{
-              
+            
               fontSize: "15px",
               fontWeight: 430,
               lineHeight: "28px",
               letterSpacing: "0em",
               textAlign: "left",
-              fontFamily:'sans-serif'
+              fontFamily:'sans-serif',
+              ":hover":{
+              color:'#EB662B'
+            },
             }}
           >
             Sign up
           </Typography>
-          {/* <Button sx={{ background: "#EB662B" , width:'83.31px '   , borderRadius :'200px' , color:'white' , marginLeft:'20px'}}>Log in</Button> */}
+       
         </Box>
-        <Button sx={{ background: "#EB662B" , width:'83.31px '   , borderRadius :'200px' , color:'white' , marginLeft:'20px'}}>Log in</Button>
+        <Button sx={{ background: "#EB662B" , width:'83.31px '   , borderRadius :'200px' , color:'white' , marginLeft:'20px' ,  ":hover":{
+           background   :'#d06637'
+            },}}>Log in</Button>
       </Stack>
     </Box>
   );

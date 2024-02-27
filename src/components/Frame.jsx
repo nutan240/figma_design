@@ -12,7 +12,7 @@ import Image7 from "../IMG/frame8.jpg";
 function Frame() {
   return (
     <Stack>
-      <Box sx={{ width: "90%", margin: "auto" ,paddingY:2 }}>
+      <Box sx={{ width: "90%", margin: "auto", paddingY: 2 }}>
         <Typography
           sx={{
             fontFamily: "sans-serif",
@@ -23,220 +23,58 @@ function Frame() {
         >
           Trending destinations
         </Typography>
-        <Box sx={{ display: "flex", justifyContent: "space-between" ,paddingY:2 }}>
-          <Box sx={{ width: "135px" }}>
-            <Typography
+        <Box
+          sx={{ display: "flex", justifyContent: "space-between", paddingY: 2 }}
+        >
+          {/* Define the boxes for each destination */}
+          {[
+            { image: Image, name: "Paris", tours: "100 + Tours" },
+            { image: Image1, name: "Singapore", tours: "400 + Tours" },
+            { image: Image2, name: "Roma", tours: "400 + Tours" },
+            { image: Image3, name: "Bangkok", tours: "1000 + Tours" },
+            { image: Image4, name: "Bali", tours: "600 + Tours" },
+            { image: Image5, name: "Phuket", tours: "2000 + Tours" },
+            { image: Image6, name: "Tokyo", tours: "700 + Tours" },
+            { image: Image7, name: "Cappadocia", tours: "900 + Tours" },
+          ].map((destination, index) => (
+            <Box
+              key={index}
               sx={{
-                backgroundImage: `url(${Image})`,
-                height: "135px",
                 width: "135px",
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center",
-              }}
-            ></Typography>
-            <Typography
-              sx={{
-                fontSize: "15px",
-                color: "#05073C",
-                fontWeight: 600,
-                paddingTop:3,
-                textAlign: "center",
+                position: "relative",
+                "&:hover .backgroundImage": {
+                  transform: "rotate(180deg)", // Rotate the background image on hover
+                },
               }}
             >
-              Paris
-            </Typography>
-            <Typography sx={{ color: "#05073C", textAlign: "center" }}>
-              100 + Tours
-            </Typography>
-          </Box>
-
-          <Box sx={{ width: "135px" }}>
-            <Typography
-              sx={{
-                backgroundImage: `url(${Image1})`,
-                height: "135px",
-                width: "135px",
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center",
-              }}
-            ></Typography>
-            <Typography
-              sx={{
-                fontSize: "15px",
-                color: "#05073C",
-                fontWeight: 600,
-                textAlign: "center",
-                paddingTop:3
-              }}
-            >
-             Singapore
-            </Typography>
-            <Typography sx={{ color: "#05073C", textAlign: "center" }}>
-              400 + Tours
-            </Typography>
-          </Box>
-
-          <Box sx={{ width: "135px" }}>
-            <Typography
-              sx={{
-                backgroundImage: `url(${Image2})`,
-                height: "135px",
-                width: "135px",
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center",
-              }}
-            ></Typography>
-            <Typography
-              sx={{
-                fontSize: "15px",
-                color: "#05073C",
-                fontWeight: 600,
-                paddingTop:3,
-                textAlign: "center",
-              }}
-            >
-             Roma
-            </Typography>
-            <Typography sx={{ color: "#05073C", textAlign: "center" }}>
-              400 + Tours
-            </Typography>
-          </Box>
-          <Box sx={{ width: "135px" }}>
-            <Typography
-              sx={{
-                backgroundImage: `url(${Image3})`,
-                height: "135px",
-                width: "135px",
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center",
-              }}
-            ></Typography>
-            <Typography
-              sx={{
-                fontSize: "15px",
-                color: "#05073C",
-                fontWeight: 600,
-                paddingTop:3,
-                textAlign: "center",
-              }}
-            >
-             Bangkok
-            </Typography>
-            <Typography sx={{ color: "#05073C", textAlign: "center" }}>
-              1000 + Tours
-            </Typography>
-          </Box>
-          <Box sx={{ width: "135px" }}>
-            <Typography
-              sx={{
-                backgroundImage: `url(${Image4})`,
-                height: "135px",
-                width: "135px",
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center",
-              }}
-            ></Typography>
-            <Typography
-              sx={{
-                fontSize: "15px",
-                color: "#05073C",
-                fontWeight: 600,
-                paddingTop:3,
-                textAlign: "center",
-              }}
-            >
-              Bali
-            </Typography>
-            <Typography sx={{ color: "#05073C", textAlign: "center" }}>
-              600 + Tours
-            </Typography>
-          </Box>
-
-
-
-          <Box sx={{ width: "135px" }}>
-            <Typography
-              sx={{
-                backgroundImage: `url(${Image5})`,
-                height: "135px",
-                width: "135px",
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center",
-              }}
-            ></Typography>
-            <Typography
-              sx={{
-                fontSize: "15px",
-                color: "#05073C",
-                fontWeight: 600,
-                paddingTop:3,
-                textAlign: "center",
-              }}
-            >
-            Phuket
-            </Typography>
-            <Typography sx={{ color: "#05073C", textAlign: "center" }}>
-              2000 + Tours
-            </Typography>
-          </Box>
-          <Box sx={{ width: "135px" }}>
-            <Typography
-              sx={{
-                backgroundImage: `url(${Image6})`,
-                height: "135px",
-                width: "135px",
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center",
-              }}
-            ></Typography>
-            <Typography
-              sx={{
-                fontSize: "15px",
-                color: "#05073C",
-                fontWeight: 600,
-                paddingTop:3,
-                textAlign: "center",
-              }}
-            >
-              Tokyo
-            </Typography>
-            <Typography sx={{ color: "#05073C", textAlign: "center" }}>
-              700 + Tours
-            </Typography>
-          </Box>
-          <Box sx={{ width: "135px" }}>
-            <Typography
-              sx={{
-                backgroundImage: `url(${Image7})`,
-                height: "135px",
-                width: "135px",
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center",
-              }}
-            ></Typography>
-            <Typography
-              sx={{
-                fontSize: "15px",
-                color: "#05073C",
-                fontWeight: 600,
-                paddingTop:3,
-                textAlign: "center",
-              }}
-            >
-             Cappadocia
-            </Typography>
-            <Typography sx={{ color: "#05073C", textAlign: "center" }}>
-              900 + Tours
-            </Typography>
-          </Box>
+              <Box
+                className="backgroundImage"
+                sx={{
+                  backgroundImage: `url(${destination.image})`,
+                  height: "135px",
+                  width: "135px",
+                  backgroundSize: "cover",
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "center",
+                  transition: "transform 1.3s ease-in-out", // Define transition property
+                }}
+              ></Box>
+              <Typography
+                sx={{
+                  fontSize: "15px",
+                  color: "#05073C",
+                  fontWeight: 600,
+                  paddingTop: 3,
+                  textAlign: "center",
+                }}
+              >
+                {destination.name}
+              </Typography>
+              <Typography sx={{ color: "#05073C", textAlign: "center" }}>
+                {destination.tours}
+              </Typography>
+            </Box>
+          ))}
         </Box>
       </Box>
     </Stack>

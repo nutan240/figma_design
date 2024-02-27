@@ -5,18 +5,21 @@ function Main() {
   return (
     <>
     <Box sx={{width:'100vw' , overflow: 'auto'}}>
-      <Stack
-        sx={{
-          position: "relative",
-          height: "502.13px",
-        //   width: 'screen',
-          backgroundImage: `url(${Image})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
-            overflow:'auto'
-        }}
-      >
+    <Stack
+  sx={{
+    position: "relative",
+    height: "502.13px",
+    backgroundImage: `url(${Image})`,
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center",
+    overflow: "auto",
+    transition: "background-size 1.3s ease-in-out", 
+    "&:hover": {
+      backgroundSize: "110%", 
+    },
+  }}
+>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1140 220"
