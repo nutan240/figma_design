@@ -9,6 +9,9 @@ import ShopNow from './ShopNow'
 import PopularThings from './PopularThings'
 import TopTrending from './TopTrending'
 import FooterHeader from './FooterHeader'
+import Frameicon from './Frameicon'
+import FooterHead from './FooterHead'
+import Footer from './Footer'
 
 function MainApp() {
   return (
@@ -22,7 +25,10 @@ function MainApp() {
         <ShopNow/>
         <PopularThings/>
         <TopTrending/>
+        <Frameicon/>
         <FooterHeader/>
+        <FooterHead/>
+        <Footer/>
     </Stack>
       
     </>

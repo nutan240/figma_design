@@ -12,7 +12,7 @@ function PopularThings() {
     <>
       <Stack sx={{ width: "90%", margin: "auto" }}>
         <Grid container sx={{ width: "100%" }}>
-          <Grid item>
+          <Grid sx={{display:{lg:'block' , sm :'flex' , } , gap:{lg:1 , sm:6}}}>
             <Grid
               sx={{
                 backgroundImage: `url(${Image})`,
@@ -28,6 +28,7 @@ function PopularThings() {
                 width: "300px",
                 marginTop: 3,
                 borderRadius: 3,
+                // marginX:{lg : 0 , sm:'auto'}
               }}
             ></Grid>
           </Grid>
@@ -36,7 +37,7 @@ function PopularThings() {
             sx={{
               backgroundImage: `url(${Image2})`,
               height: "510px",
-              width: "400px",
+              width: {lg:"400px" , sm :'600px' , xs:'700px'},
               display: "flex",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
@@ -60,7 +61,7 @@ function PopularThings() {
               }}
             ></Grid>
 
-            <Grid sx={{ display: "flex", gap: "7px", padding: 3 }}>
+            <Grid sx={{ display: {lg:"flex" ,sm :'flex' , sx :'none'}, gap:{lg:'7px' , sm :6 }, padding: 3 }}>
               <Grid
                 sx={{
                   backgroundImage: `url(${Image4})`,
