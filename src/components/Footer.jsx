@@ -22,12 +22,12 @@ function Footer() {
       }}
     >
       <Box sx={{ width: "90%", margin: "auto" }}>
-        <Box sx={{ display: "flex", paddingY: 4 }}>
+        <Box sx={{ display: "flex", paddingY: 4 , fontWeight:'bold' }}>
           <Typography
             sx={{
               color: "#05073C",
               fontFamily: "sans-serif",
-              fontSize: "20px",
+              fontSize: "23px",fontWeight:'bold'
             }}
           >
             Speak to our expert at
@@ -36,7 +36,8 @@ function Footer() {
             sx={{
               color: "#EB662B",
               fontFamily: "sans-serif",
-              fontSize: "20px",
+              fontSize: "23px",
+              fontWeight:'bold'
             }}
           >
             1-800-453-6744
@@ -100,7 +101,7 @@ function Footer() {
               sx={{
                 color: "#05073C",
                 fontFamily: "sans-serif",
-                fontWeight: 600,
+                fontWeight: 500,
                 fontSize: "14px",
               }}
             >
@@ -110,7 +111,7 @@ function Footer() {
               sx={{
                 color: "#05073C",
                 fontFamily: "sans-serif",
-                fontWeight: 600,
+                fontWeight: 500,
                 fontSize: "14px",
                 paddingTop: 1,
               }}
@@ -121,7 +122,7 @@ function Footer() {
               sx={{
                 color: "#05073C",
                 fontFamily: "sans-serif",
-                fontWeight: 600,
+                fontWeight: 500,
                 fontSize: "14px",
                 paddingTop: 1,
               }}
@@ -132,7 +133,7 @@ function Footer() {
               sx={{
                 color: "#05073C",
                 fontFamily: "sans-serif",
-                fontWeight: 600,
+                fontWeight: 500,
                 fontSize: "14px",
                 paddingTop: 1,
               }}
@@ -143,7 +144,7 @@ function Footer() {
               sx={{
                 color: "#05073C",
                 fontFamily: "sans-serif",
-                fontWeight: 600,
+                fontWeight: 500,
                 fontSize: "14px",
                 paddingTop: 1,
               }}
@@ -154,7 +155,7 @@ function Footer() {
               sx={{
                 color: "#05073C",
                 fontFamily: "sans-serif",
-                fontWeight: 600,
+                fontWeight: 500,
                 fontSize: "14px",
                 paddingTop: 1,
               }}
@@ -165,7 +166,7 @@ function Footer() {
               sx={{
                 color: "#05073C",
                 fontFamily: "sans-serif",
-                fontWeight: 600,
+                fontWeight: 500,
                 fontSize: "14px",
                 paddingTop: 1,
               }}
@@ -180,7 +181,7 @@ function Footer() {
                 color: "#05073C",
                 fontFamily: "sans-serif",
                 fontWeight: 600,
-                fontSize: "20px",
+                fontSize: "22px",
                 paddingTop: 4,
               }}
             >
@@ -190,8 +191,8 @@ function Footer() {
               sx={{
                 color: "#05073C",
                 fontFamily: "sans-serif",
-                fontWeight: 600,
-                fontSize: "14px",
+                fontWeight: 500,
+                fontSize: "15px",
                 paddingTop: 1,
               }}
             >
@@ -201,8 +202,8 @@ function Footer() {
               sx={{
                 color: "#05073C",
                 fontFamily: "sans-serif",
-                fontWeight: 600,
-                fontSize: "14px",
+                fontWeight: 500,
+                fontSize: "15px",
                 paddingTop: 1,
               }}
             >
@@ -212,8 +213,8 @@ function Footer() {
               sx={{
                 color: "#05073C",
                 fontFamily: "sans-serif",
-                fontWeight: 600,
-                fontSize: "14px",
+                fontWeight: 500,
+                fontSize: "15px",
                 paddingTop: 1,
               }}
             >
@@ -223,8 +224,8 @@ function Footer() {
               sx={{
                 color: "#05073C",
                 fontFamily: "sans-serif",
-                fontWeight: 600,
-                fontSize: "14px",
+                fontWeight: 500,
+                fontSize: "15px",
                 paddingTop: 1,
               }}
             >
@@ -269,6 +270,7 @@ function Footer() {
                 gap: 3,
                 paddingX: 2,
                 marginTop: 4,
+                justifyContent:'space-between'
               }}
             >
               <Typography
@@ -311,7 +313,7 @@ function Footer() {
                 sx={{
                   color: "#05073C",
                   fontFamily: "sans-serif",
-                  fontWeight: 600,
+                  fontWeight: 500,
                   fontSize: "14px",
                   paddingTop: 1,
                 }}
@@ -322,7 +324,7 @@ function Footer() {
                 sx={{
                   color: "#05073C",
                   fontFamily: "sans-serif",
-                  fontWeight: 600,
+                  fontWeight: 500,
                   fontSize: "14px",
                   paddingTop: 1,
                 }}
@@ -335,9 +337,9 @@ function Footer() {
       </Box>
      
     </Stack>
-    <Box sx={{ display: "flex", justifyContent: "space-between"  , width:'90%' , margin:'auto' , paddingY:2}}>
+    <Box sx={{ display: "flex", justifyContent: "space-between"  , width:'90%' , margin:'auto' , paddingY:2 , color: "#05073C",}}>
         <Typography>© Copyright Viatours 2024</Typography>
-        <Box sx={{ display: "flex", gap: 0.3 }}>
+        {/* <Box sx={{ display: "flex", gap: 0.3 }}>
           <Typography
             sx={{
               backgroundImage: `url(${Image1})`,
@@ -345,7 +347,12 @@ function Footer() {
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
               height: "25px",
+              borderRadius:3,
               width: "48px",
+              ":hover" :{
+                border:"2px" ,
+                borderColor:'orange'
+              }
             }}
           />
          
@@ -355,6 +362,7 @@ function Footer() {
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
+              borderRadius:3,
               height: "25px",
               width: "48px",
             }}
@@ -367,6 +375,7 @@ function Footer() {
               backgroundPosition: "center",
               height: "25px",
               width: "48px",
+              borderRadius:3
             }}
           />
           <Typography
@@ -376,6 +385,7 @@ function Footer() {
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
               height: "25px",
+              borderRadius:3,
               width: "48px",
             }}
           />
@@ -386,6 +396,7 @@ function Footer() {
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
               height: "25px",
+              borderRadius:3,
               width: "48px",
             }}
           />
@@ -395,11 +406,12 @@ function Footer() {
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
+              borderRadius:3,
               height: "25px",
               width: "48px",
             }}
           />
-        </Box>
+        </Box> */}
       </Box>
       </Box>
   );

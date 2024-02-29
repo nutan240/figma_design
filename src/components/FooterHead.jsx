@@ -22,7 +22,7 @@ function FooterHead() {
           fontWeight: 500,
           fontFamily: "sans-serif",
           color: "#05073C",
-          height: "200px", marginTop:3
+          height: "100px", marginTop:3
           }}>Trips</Typography>
           <Box sx={{ display: "flex" }}>
           
@@ -65,7 +65,7 @@ function FooterHead() {
           fontWeight: 500,
           fontFamily: "sans-serif",
           color: "#05073C",
-          height: "200px",marginTop:3
+          height: "100px",marginTop:3
           }}>Trips</Typography>
           <Box sx={{ display: "flex" }}>
             <Typography
@@ -107,7 +107,7 @@ function FooterHead() {
           fontWeight: 500,
           fontFamily: "sans-serif",
           color: "#05073C",
-          height: "200px",marginTop:3
+          height: "100px",marginTop:3
           }}>Trips</Typography>
           <Box sx={{ display: "flex" }}>
             <Typography
